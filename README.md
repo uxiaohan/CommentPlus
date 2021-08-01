@@ -20,7 +20,7 @@
 
 ## 截图
 
-![截图](demo.png)
+![截图](https://cdn.jsdelivr.net/gh/uxiaohan/CommentPlus/demo.jpg)
 
 ## 更新记录
 
