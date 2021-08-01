@@ -10,7 +10,7 @@
 
 ## 使用方法
 
-1.  [点此下载](https://github.com/uxiaohan/CommentPlus/archive/main.zip)后解压，将解压后的目录名改为 `CommentPlus`，然后上传到你的 Typecho 的 `/usr/plugins`，并在 Typecho 后台开启插件
+1.  [点此下载](https://github.com/uxiaohan/CommentPlus/archive/main.zip) 或者 [蓝奏云下载](https://ohan.lanzoui.com/iwynWs42ala) 后解压，将解压后的目录名改为 `CommentPlus`，然后上传到你的 Typecho 的 `/usr/plugins`，并在 Typecho 后台开启插件
 
 2.
 
