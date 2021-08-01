@@ -2,6 +2,7 @@
 
 > Typecho 插件——支持 Plus+ 和 酷推 微信推送评论通知 - CommentPlus
 
+> 插件完美支持 [Typecho-Joe-Theme](https://www.vvhan.com/Typecho-Joe-Theme.html) 的图片评论推送
 ## 感谢
 
 本插件的微信推送采用了 [@Plus+](https://pushplus.hxtrip.com/) 的 [微信推送](https://pushplus.hxtrip.com/) 解决方案，在此特别感谢 @plus+ ！
