@@ -3,12 +3,12 @@
 /**
  * 微信推送评论通知 - Plus版
  * 
- * @package CommentWechatPlus
+ * @package CommentPlus
  * @author Han
  * @version 1.0.0
  * @link https://www.vvhan.com
  */
-class CommentWechatPlus_Plugin implements Typecho_Plugin_Interface
+class CommentPlus_Plugin implements Typecho_Plugin_Interface
 {
     /**
      * 激活插件方法,如果激活失败,直接抛出异常
@@ -20,9 +20,9 @@ class CommentWechatPlus_Plugin implements Typecho_Plugin_Interface
     public static function activate()
     {
 
-        Typecho_Plugin::factory('Widget_Feedback')->comment = array('CommentWechatPlus_Plugin', 'sc_send');
-        Typecho_Plugin::factory('Widget_Feedback')->trackback = array('CommentWechatPlus_Plugin', 'sc_send');
-        Typecho_Plugin::factory('Widget_XmlRpc')->pingback = array('CommentWechatPlus_Plugin', 'sc_send');
+        Typecho_Plugin::factory('Widget_Feedback')->comment = array('CommentPlus_Plugin', 'sc_send');
+        Typecho_Plugin::factory('Widget_Feedback')->trackback = array('CommentPlus_Plugin', 'sc_send');
+        Typecho_Plugin::factory('Widget_XmlRpc')->pingback = array('CommentPlus_Plugin', 'sc_send');
 
         return _t('请配置此插件的 Token, 以使您的推送生效');
     }
@@ -78,8 +78,8 @@ class CommentWechatPlus_Plugin implements Typecho_Plugin_Interface
     public static function sc_send($comment, $post)
     {
         $options = Typecho_Widget::widget('Widget_Options');
-        $vvhanToken = $options->plugin('CommentWechatPlus')->vvhantoken;
-        $vvhanOr = !$options->plugin('CommentWechatPlus')->vvhanname;
+        $vvhanToken = $options->plugin('CommentPlus')->vvhantoken;
+        $vvhanOr = !$options->plugin('CommentPlus')->vvhanname;
         $text = "有人在您的博客发表了评论";
         if ($vvhanOr && substr($comment['text'], 0, 8) === '{!{data:') {
             preg_match_all('/data:image(.*?)\}!\}/i', $comment['text'], $out);
